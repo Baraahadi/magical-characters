@@ -1,0 +1,160 @@
+@font-face {
+  font-family: "HarryP";
+  src: url("../fonts/HarryP-MVZ6w.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "HarryP";
+}
+body {
+  background-color: #121212;
+  color: #f7f1e1;
+  position: relative;
+}
+header {
+  background-color: #d5cea3;
+  height: 80px;
+  color: #946b2d;
+  text-align: center;
+  line-height: 80px;
+  text-transform: uppercase;
+}
+main {
+  position: relative;
+  height: 560px;
+}
+.filter-characters {
+  padding: 5px;
+  text-align: left;
+}
+#filteration {
+  color: #3c2a21;
+  padding: 10px 15px;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+  height: 41.8px;
+  width: 20%;
+  font-size: 20px;
+  background-color: #e5e5cb;
+  cursor: pointer;
+  margin: 0 5px;
+}
+#label-character {
+  border-radius: 5px;
+  font-size: 25px;
+  text-indent: 11px;
+  display: inline-block;
+  color: #e5e5cb;
+}
+select:focus {
+  outline: none;
+  border: none;
+}
+select:hover {
+  border: 2px solid #0d6217;
+}
+#display-characters {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  height: 500px;
+}
+.character-card {
+  border: 2px solid #946b2d;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  color: black;
+  background-image: url(../images/card-character.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 290px;
+  position: relative;
+  transition: all 0.3s;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px #0d6217;
+}
+.character-card:hover {
+  box-shadow: 0px 0px 30px 1px #8e1616;
+  border-radius: 20px;
+  transform: scale(0.98);
+}
+.character-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin: 10px auto;
+  gap: 10px;
+}
+.character-image {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 42%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+img {
+  border-radius: 50px;
+  width: 100%;
+  height: 100%;
+}
+.character-name {
+  color: #3c2a21;
+  font-weight: 800;
+  margin-bottom: 5px;
+}
+.character-house {
+  color: #3c2a21;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.character-dateOfBirth {
+  color: #3c2a21;
+  font-weight: 800;
+  margin-bottom: 5px;
+}
+#load-more {
+  display: block;
+  padding: 12px 30px;
+  background-color: #7f0909;
+  color: #ffc500;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  position: absolute;
+  bottom: 0;
+  right: 10px;
+}
+#load-more:hover {
+  background-color: #946b2d;
+  color: #f7f1e1;
+  box-shadow: 0 0 10px #ffc500;
+  transform: translateY(-2px);
+}
+footer {
+  background-color: #3c2a21;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  color: #fff;
+  text-align: center;
+  line-height: 40px;
+  text-transform: uppercase;
+}
