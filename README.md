@@ -1,4 +1,4 @@
-# Magical Characters
+# Magical Characters [[Magical Characters](https://baraahadi.github.io/magical-characters/)]
 
 >This is a web application that fetches and displays characters from the Harry Potter API. Users can filter characters by their Hogwarts house, load more characters with pagination, and view each character’s details in a styled card layout.
 
